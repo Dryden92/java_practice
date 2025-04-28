@@ -1,0 +1,31 @@
+public class Main
+{
+    void meth()
+    {
+       //Write a Program to Swap Two Numbers
+       int a=2;
+       int b=4;
+       int c=a;
+       a=b;
+       b=c;
+       System.out.println("a= "+a);
+       System.out.println("b= "+b);
+    }
+    
+    void meth2()
+    {
+        int a=342;
+        int b=894;
+        
+        a=(a+b) - (b=a);
+       
+         System.out.println("a= "+a);
+         System.out.println("b= "+b);
+    }
+	public static void main(String[] args)
+	{
+	    Main obj=new Main();
+	 //   obj.meth();
+	    obj.meth2();
+	}
+}
