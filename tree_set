@@ -1,0 +1,21 @@
+import java.util.TreeSet;
+public class ClassA
+{
+    void meth()
+    {
+        TreeSet<Integer> ts=new TreeSet<>();
+        ts.add(50);  //insertion order is not maintained
+        ts.add(39);  //heterogeneous elements not allowed
+       // ts.add("dryden"); //null value not allowed;
+        ts.add(20);       //duplicates not allowed
+       // ts.add(null);     //not synchronized
+        ts.add(20);
+        ts.add(10);
+
+        System.out.println(ts);
+    }
+    public static void main(String [] args)
+    {
+        new ClassA().meth();
+    }
+}
