@@ -1,0 +1,28 @@
+import java.util.Vector;
+public class Main
+{
+    static void meth()
+    {
+       Vector<Object> v=new Vector<Object>();
+       v.add(10);                   //insertion oder is maintained
+       v.add(20);                   //hetrogeneous elements allowed
+       v.add("dryden");             //null value allowed
+       v.add('c');                  //duplicates allowed
+       v.add(null);                 //default size is 10
+       v.add(10);                   //synchronized
+       v.add(40);
+       
+       v.add(1,60);
+       System.out.println(v.size());
+       System.out.println(v.isEmpty());
+       System.out.println(v.contains(10));
+       System.out.println(v.get(1));
+       System.out.println(v);
+      
+    }
+	public static void main(String[] args) 
+	{
+	    meth();
+		
+	}
+}
