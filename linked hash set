@@ -1,0 +1,22 @@
+import java.util.LinkedHashSet;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    LinkedHashSet<Object> lhs=new LinkedHashSet<Object>();
+	    
+	    lhs.add(10);            //maintain insertion order
+	    lhs.add(20);            //removes duplicates 
+	    lhs.add("dryden");      //hetrogeneous elements allowed
+	    lhs.add('c');           //null value allowed
+	    lhs.add(null);          //default size is 1
+	    lhs.add(10);            //seze increases by double
+	    lhs.add(30);            //not synchronized
+	    
+	    System.out.println(lhs.size());
+	    
+	    System.out.println(lhs.isEmpty());
+	    System.out.println(lhs.contains(10));
+		System.out.println(lhs);
+	}
+}
