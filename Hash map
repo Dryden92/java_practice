@@ -1,0 +1,30 @@
+import java.util.HashMap;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    //hash map
+	    //linked hash map
+	    //tree map
+	    //hashtable
+	    
+	    HashMap<Object, Object> map=new HashMap<Object, Object>();
+	    
+	    map.put(1, 10);         //hetrogeneous allowed
+	    map.put("dryden", 20);  //only 1 null allowed at key
+	    map.put(2, 10);         //multiple null allowed at values
+	    map.put(null, null);    //duplicate values allowed
+	    map.put(4, null);       //load factor is 0.75
+	    map.put(3, "java");     //default size is 16
+	                            //size increases by double
+	                            //not synchoronized
+	    
+		System.out.println(map);
+		System.out.println(map.size());
+		System.out.println(map.get(3));
+		System.out.println(map.containsKey(4));
+		System.out.println(map.isEmpty());
+		System.out.println(map.keySet());
+		System.out.println(map.values());
+	}
+}
