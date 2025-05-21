@@ -1,0 +1,32 @@
+import java.util.TreeMap;
+import java.util.Iterator;
+import java.util.TreeSet;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    //tree map
+	    //hashtable
+	    
+	    TreeMap<Object, Object> map=new TreeMap<Object, Object>();
+	    
+	    map.put(1, 10);         //hetrogeneous keys are not allowed
+	    map.put(7, 20);         //null keys are not allowed
+	    map.put(1, 10);         //duplicate keys are not allowed
+	    map.put(9 , null);      //default capacity is 16
+	    map.put(4, null);       //size increases by double
+	    map.put(3, "python");   //not synchronized
+	    map.put(8, "java");     
+	    map.put(5, "c++");      
+	    
+	    System.out.print(map.keySet());
+	    System.out.print(map.values());
+	    
+		System.out.println("\n"+map.size());
+		System.out.println(map.get(3));
+		System.out.println(map.containsKey(4));
+		System.out.println(map.isEmpty());
+		System.out.println(map.keySet());
+		System.out.println(map.values());
+	}
+}
