@@ -1,0 +1,30 @@
+import java.util.LinkedHashMap;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    //hash map
+	    //linked hash map
+	    //tree map
+	    //hashtable
+	    
+	    LinkedHashMap<Object, Object> map=new LinkedHashMap<Object, Object>();
+	    
+	    map.put(1, 10);         //insertion order is maintained
+	    map.put("dryden", 20);  //one key null allowed
+	    map.put(2, 10);         //multiple null values allowed
+	    map.put(null, null);    //duplicate key not allowed, values are allowed
+	    map.put(4, null);       //size is 16
+	    map.put(3, "java");     //increases by double
+	                            //load factor is 0.75
+	                            //not synchronized
+	    
+		System.out.println(map);
+		System.out.println(map.size());
+		System.out.println(map.get(3));
+		System.out.println(map.containsKey(4));
+		System.out.println(map.isEmpty());
+		System.out.println(map.keySet());
+		System.out.println(map.values());
+	}
+}
